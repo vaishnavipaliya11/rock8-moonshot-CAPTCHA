@@ -1,19 +1,16 @@
-import { ReactEventHandler, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { generateCaptcha } from "../../utils/generateCaptcha";
 import { Input } from "../Input/Input";
 import "./captcha.css";
 const Captcha = ({
-  isCaptchaValidated,
   setIsCaptchaValidated,
-  refresh
+  refresh,
 }: {
-  isCaptchaValidated: boolean;
   setIsCaptchaValidated: (status: boolean) => void;
-  refresh:number 
+  refresh: number;
 }) => {
   const [captchaStr, setCaptchaStr] = useState("");
   const [inputCaptcha, setInputCaptcha] = useState("");
-
 
   const inputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputCaptcha(e.target.value);
@@ -21,18 +18,15 @@ const Captcha = ({
 
   useEffect(() => {
     setCaptchaStr(generateCaptcha(5));
-    setInputCaptcha("")
+    setInputCaptcha("");
   }, [refresh]);
 
-
   useEffect(() => {
-    if (inputCaptcha === captchaStr && captchaStr !=="") {
+    if (inputCaptcha === captchaStr && captchaStr !== "") {
       setIsCaptchaValidated(true);
-      
     }
   }, [inputCaptcha, captchaStr]);
 
-  
   return (
     <div className="captcha-container ">
       <div className="captcha-sub-container ">

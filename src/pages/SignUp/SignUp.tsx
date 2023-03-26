@@ -81,7 +81,7 @@ const SignUp = () => {
         );
       })}
       <Captcha
-        isCaptchaValidated={isCaptchaValidated}
+       
         setIsCaptchaValidated={setIsCaptchaValidated}
         refresh={captchaRefreshCount}
       />
