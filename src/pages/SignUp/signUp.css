@@ -1,0 +1,7 @@
+.sign-up-container{
+    background: #fff;
+    border: 1px solid #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 24px 36px 64px -14px rgba(77,77,77,.15);
+    padding: 0.8rem;
+}

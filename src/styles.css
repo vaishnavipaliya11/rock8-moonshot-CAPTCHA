@@ -1,0 +1,28 @@
+:root{
+    --gray-clr: grey;
+    --primary-clr: #4255bd;
+    --text-clr: #fff;
+}
+.common-flex{
+    display: flex;
+}
+.common-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.a-center{
+    align-items: center;
+}
+.j-center{
+    justify-content: center;
+}
+.p-sm{
+    padding: 0.5rem;
+    
+}
+.m-sm{
+    margin: 0.5rem;
+}
+
+

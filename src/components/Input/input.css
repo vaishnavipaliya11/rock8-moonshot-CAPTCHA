@@ -1,0 +1,27 @@
+:root{
+    --gray-clr: #c4c0c0;
+    --primary-clr: #4255bd;
+    --text-clr: #fff;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0.5rem;
+}
+.input{
+    border-radius: 3px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--gray-clr);
+    transition: all 0.25s ease-in;
+}
+.input:focus{
+    outline: none;
+    border-color: #666565;
+}
+.label{
+    /* color: var(--gray-clr); */
+    font-size: 0.8rem;
+}
