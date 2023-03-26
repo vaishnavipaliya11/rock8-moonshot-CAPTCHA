@@ -1,0 +1,21 @@
+.captcha-sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  
+  .captcha-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .captch-refresh {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  .captcha {
+    border-radius: 3px;
+    border: 1px solid #c4c0c0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
